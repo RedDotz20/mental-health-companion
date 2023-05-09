@@ -6,7 +6,7 @@ export default function Student() {
 	const handleFamilyStressClick = () => navigate(`family-stress`);
 
 	return (
-		<div>
+		<div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}>
 			STUDENT ROUTE
 			<button onClick={handleAcademicStressClick}>Academic Stress</button>
 			<button onClick={handleFamilyStressClick}>Family Stress</button>

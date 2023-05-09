@@ -25,25 +25,29 @@ export default function FamilyStress() {
 	};
 
 	return (
-		<div>
-			<h1>ACADEMIC STRESS</h1>
-			<p>{familyStress[parseInt(id) - 1].text}</p>
+		<>
+			<h2>{familyStress[parseInt(id) - 1].text}</h2>
 
 			{showResponse && <p>{familyStress[parseInt(id) - 1].yesResponse}</p>}
 
-			{showResponse ||
-				(familyStress.length === parseInt(id) && (
-					<button onClick={() => handleNext()}>
-						{!(familyStress.length === parseInt(id)) ? 'NEXT' : 'END'}
-					</button>
-				))}
+			{showResponse && (
+				<button onClick={() => handleNext()}>
+					{!(familyStress.length === parseInt(id)) ? 'NEXT' : 'END'}
+				</button>
+			)}
+
+			{familyStress.length === parseInt(id) && (
+				<button onClick={() => handleNext()}>END</button>
+			)}
 
 			{!showResponse && parseInt(id) < familyStress.length && (
-				<>
+				<div
+					style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}
+				>
 					<button onClick={() => handleYes()}>YES</button>
 					<button onClick={() => handleNo()}>NO</button>
-				</>
+				</div>
 			)}
-		</div>
+		</>
 	);
 }

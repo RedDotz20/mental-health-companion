@@ -9,6 +9,7 @@ import WorkingStudent from './pages/WorkingStudent';
 import EndMessage from './pages/EndMessage';
 import Student from './pages/Student';
 import AcademicStress from './pages/Student/AcademicStress';
+import FamilyStress from './pages/Student/FamilyStress';
 import StudentStatus from './pages/Student/StudentStatus';
 
 export default function App() {
@@ -29,6 +30,10 @@ export default function App() {
 			<Route
 				path="/student/academic-stress/:id"
 				element={<AcademicStress />}
+			/>
+			<Route
+				path="/student/family-stress/:id"
+				element={<FamilyStress />}
 			/>
 			<Route
 				path="working-student/:id"

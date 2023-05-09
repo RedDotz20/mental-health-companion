@@ -25,9 +25,8 @@ export default function AcademicStress() {
 	};
 
 	return (
-		<div>
-			<h1>ACADEMIC STRESS</h1>
-			<p>{academicStress[parseInt(id) - 1].text}</p>
+		<>
+			<h2>{academicStress[parseInt(id) - 1].text}</h2>
 
 			{showResponse && <p>{academicStress[parseInt(id) - 1].yesResponse}</p>}
 
@@ -42,11 +41,13 @@ export default function AcademicStress() {
 			)}
 
 			{!showResponse && parseInt(id) < academicStress.length && (
-				<>
+				<div
+					style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}
+				>
 					<button onClick={() => handleYes()}>YES</button>
 					<button onClick={() => handleNo()}>NO</button>
-				</>
+				</div>
 			)}
-		</div>
+		</>
 	);
 }

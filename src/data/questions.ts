@@ -38,7 +38,6 @@ export const familyStress = [
 	},
 	{
 		text: 'Do you want to open up to your parents or guardian?',
-
 		yesResponse:
 			"Yes, it is hard to open up and speak up about our thought and feelings but you can take it slowly. Try to find a timing then release everything. The warmth of the parents' love and understanding cannot be compared to anything else in the world. They'll understand you, that's for sure.",
 	},
@@ -56,5 +55,9 @@ export const familyStress = [
 		text: "Do you feel like you're alone inside your own house?",
 		yesResponse:
 			"You may feel that you are alone, but you are not. Instead of talking to yourself, you can talk to Him through prayer. Also, you can go outside and try to bond with your neighbors or meet some friends. Try to catch up with them or engage yourself with internet friends whom you can trust. Just do what you can do for you to not feel that you're alone.",
+	},
+	{
+		text: "Hey, brave human being! I know it is hard to deal with family matters especially if there are other things that's going on with your life right now. But just believe that God has His plan for your family, and he always have reasons for everything. Everything will fall into its rightful places in His right time. ",
+		yesResponse: '',
 	},
 ];
